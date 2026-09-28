@@ -6,6 +6,12 @@
 > copia). No incluye secretos, claves de firma ni documentación interna de equipo. La app sigue
 > consumiendo una **API pública de solo lectura** (sin autenticación) para mostrar contenido
 > real de esa radio.
+>
+> **Sobre el desarrollo:** el proyecto se hizo durante 1º de DAM (Desarrollo de Aplicaciones
+> Multiplataforma), con **Claude Code (IA)** como herramienta de apoyo durante todo el
+> desarrollo, igual que se usa hoy en muchos entornos profesionales. Las decisiones de
+> arquitectura, funcionalidades y la resolución de los problemas reales descritos más abajo
+> fueron guiadas y revisadas por el equipo.
 
 App **Android/iOS** hecha en **Flutter** para la radio: noticias, podcasts, radio en directo
 (audio + vídeo) y ajustes, en **9 idiomas**.
