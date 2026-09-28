@@ -1,0 +1,81 @@
+name: radio_app
+description: "App oficial de RadioApp"
+publish_to: 'none'
+version: 1.0.1+25
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Estado
+  flutter_riverpod: ^2.6.1
+  # Red / API REST de WordPress
+  dio: ^5.7.0
+  # Tipografías (Manrope + Bebas Neue)
+  google_fonts: ^6.2.1
+  # Logo SVG vectorizado
+  flutter_svg: ^2.0.10+1
+  # Imágenes remotas con caché
+  cached_network_image: ^3.4.1
+  # Fechas / formato
+  intl: ^0.19.0
+  # Audio — stream radio en directo
+  just_audio: ^0.9.36
+  # Persistir preferencias (idioma, tema)
+  shared_preferences: ^2.3.2
+  # Parsear el feed RSS de podcast
+  xml: ^6.5.0
+  # Abrir enlaces externos (redes, podcast, email)
+  url_launcher: ^6.3.1
+  share_plus: ^12.0.2
+  # MediaSession (Android) / MPNowPlayingInfoCenter (iOS) → pantalla del coche
+  audio_service: ^0.18.15
+  # Reproductor de vídeo HLS (stream en directo)
+  # Deep links: radioapp://article?id=X  /  radioapp://podcast?id=X
+  app_links: ^6.3.0
+  # Solicitar permiso de notificaciones en runtime (Android 13+)
+  permission_handler: ^12.0.0
+  firebase_core: ^4.11.0
+  firebase_analytics: ^12.4.3
+  webview_flutter: ^4.14.1
+  webview_flutter_android: ^4.13.0
+  webview_flutter_wkwebview: ^3.26.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.8
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/launcher_icon.png"
+  adaptive_icon_background: "#BD0220"
+  adaptive_icon_foreground: "assets/launcher_icon_foreground.png"
+  min_sdk_android: 23
+
+# Splash nativo (Android/iOS): logo de RadioApp sobre fondo oscuro, a juego
+# con la identidad. NO toca web. Regenerar: dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#BD0220"
+  image: assets/splash_mark.png
+  android: true
+  ios: true
+  web: false
+  android_12:
+    color: "#BD0220"
+    image: assets/splash_mark.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo/
+    - assets/icons/
+    # Marca (disco + play) en blanco: recuadro de espera del vídeo de la radio.
+    - assets/splash_mark.png

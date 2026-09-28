@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Permite tráfico HTTP solo hacia unicaradio.it (algunas URLs de medios
+  antiguas en la base de datos de WordPress pueden ser http://).
+  Reemplaza el flag global android:usesCleartextTraffic="true" del manifest.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">unicaradio.it</domain>
+    </domain-config>
+</network-security-config>

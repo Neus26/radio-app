@@ -1,0 +1,44 @@
+# ---- Secretos (NUNCA al repo) ----
+.env
+.env.*
+*.keystore
+*.jks
+key.properties
+**/google-services.json
+**/GoogleService-Info.plist
+db-credentials*
+# toda la carpeta de samples de BBDD fuera del repo (estructura y datos)
+docs/db-sample/
+
+# ---- Flutter / Dart ----
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.pub-cache/
+.pub/
+
+# ---- Android ----
+**/android/.gradle/
+**/android/.kotlin/
+**/android/local.properties
+**/android/captures/
+**/android/app/release/
+*.apk
+*.aab
+
+# ---- iOS ----
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# ---- IDE / OS ----
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+devtools_options.yaml

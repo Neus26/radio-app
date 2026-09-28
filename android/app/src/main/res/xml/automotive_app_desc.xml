@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declara RadioApp como app de MEDIOS para Android Auto. Sin esto, el
+     coche no la lista aunque el MediaBrowserService exista. Solo audio. -->
+<automotiveApp>
+    <uses name="media"/>
+</automotiveApp>
